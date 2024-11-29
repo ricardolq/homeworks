@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(Homework LANGUAGES C)
+
+add_subdirectory(fibonacci_recursive)
+add_subdirectory(fibonacci_iterative)
+add_subdirectory(maze_backtracking)
+add_subdirectory(orderedLinkedLists)
+add_subdirectory(udp_loadtestclient)
+add_subdirectory(udp_server_multithread)

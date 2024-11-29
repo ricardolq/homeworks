@@ -1,0 +1,1 @@
+add_executable(listsordered listsordered.c)
