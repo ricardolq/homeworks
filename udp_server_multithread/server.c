@@ -76,6 +76,7 @@ int main() {
             CLOSESOCKET(server_fd);
             exit(EXIT_FAILURE);
         }
+        request->buf[valread] = '\0';
         printf("Received: %s\n", request->buf);
 
         pthread_t thread_id;

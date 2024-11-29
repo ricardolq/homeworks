@@ -37,8 +37,6 @@ void *client_thread(void *arg) {
         return NULL;
     }
 
-    // Seed the random number generator
-    srand(time(NULL));
     // Select a random word from the list
     const char *random_word = words[rand() % WORD_COUNT];
 
@@ -73,6 +71,8 @@ void *client_thread(void *arg) {
 }
 
 int main() {
+    // Seed the random number generator
+    srand(time(NULL));
     INIT_SOCKETS();
     pthread_t clients[CLIENT_COUNT];
 
