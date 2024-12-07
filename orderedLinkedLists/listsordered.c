@@ -15,15 +15,7 @@ typedef struct Node {
 
 
 int insertOrdered(Node **head, Person data);
-int deleteName(Node **head, char *name);
-int deleteAtBeginning(Node **head);
-int deleteAtEnd(Node **head);
-int deleteAtPosition(Node **head, int position);
-Node *searchName(Node *head, char *name);
-Node *searchNameOrdered(Node *head, char *name);
 void printList(Node *head);
-void printNodeAtPosition(Node *head, int position);
-int clearList(Node **head);
 
 int insertOrdered(Node **head, Person data) {
     Node *newNode = (Node *)malloc(sizeof(Node));
